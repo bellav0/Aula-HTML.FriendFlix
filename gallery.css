@@ -1,0 +1,60 @@
+
+
+
+.container{
+	display: grid;
+	grid-template-columns:repeat(2,50%);
+	grid-template-rows:repeat(2,50%);
+	width:100%;
+	height:100%;
+	background-color:black;
+	justify-items: center;
+	align-items:center;
+	font-family: 'Cinzel', serif;
+	font-size:2em;
+	color:#a7180e;
+
+	
+}
+
+.todas{
+	background-color: 21080d;
+	border: solid 2px black;
+	width: 80%;
+	height: 80%;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	transition:width 2s, height 2s, border-radius 4s;
+	border-radius:20px;
+	position:relative;
+	transition-timing-function: ease-out;
+	
+}
+
+
+#serie-2{
+	background-image: url(https://doktor.tech/wp-content/uploads/2019/10/dark_netflix_serie_wallpaper_by_derotsen-dbwynjd.jpg);
+	background-size: cover;
+}
+#serie-4{
+	background-image: url(https://d1lss44hh2trtw.cloudfront.net/assets/article/2018/09/24/following-telltale-collapse-netflix-reaffirms-stranger-things-game-header_feature.jpg);
+	background-size:cover;
+}
+
+.todas:hover{
+	width:100%;
+	height: 100%;
+	border-radius:0px;
+}
+@media(max-width: 600px){
+
+ 	.container{
+ 		display:flex;
+ 		flex-direction:column;
+ 		justify-content:flex-start;
+ 	}
+}
+.todas{
+	margin-top:2vh;
+}
